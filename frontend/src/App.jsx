@@ -8,7 +8,7 @@ const App = () => {
 
   // Hàm gọi API lấy danh bạ
   const fetchContacts = async () => {
-    const res = await fetch('http://localhost:5000/contacts');
+    const res = await fetch('https://contact-react-app.onrender.com/contacts');
     const data = await res.json();
     setContacts(data);
   };
