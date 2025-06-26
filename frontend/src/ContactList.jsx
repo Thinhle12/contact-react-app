@@ -8,7 +8,7 @@ const ContactList = ({ contacts, search, onDeleteSuccess }) => {
 
   const handleDelete = async (id) => {
     if (window.confirm('Bạn có chắc muốn xoá liên hệ này?')) {
-      await fetch(`http://localhost:5000/contacts/${id}`, { method: 'DELETE' });
+      await fetch(`https://contact-react-app.onrender.com/contacts/${id}`, { method: 'DELETE' });
       onDeleteSuccess(); // Reload lại danh bạ
     }
   };

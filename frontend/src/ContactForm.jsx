@@ -10,7 +10,7 @@ const ContactForm = ({ onAddSuccess }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch('http://localhost:5000/contacts', {
+    await fetch('https://contact-react-app.onrender.com/contacts', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newContact),
