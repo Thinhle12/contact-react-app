@@ -12,7 +12,8 @@ const db = mysql.createConnection({
   user: 'root',
   password: 'OycGPAZERmnYtgfzkDYgrVfoPjPsMOBm',       // điền mật khẩu nếu có
   database: 'railway',
-  
+  port: 3306,  
+  connectTimeout: 10000,
    
 
 });
