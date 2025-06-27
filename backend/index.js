@@ -8,10 +8,10 @@ app.use(express.json());
 
 // Kết nối MySQL
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: 'mysql.railway.internal',
   user: 'root',
-  password: 'Bin$120699',       // điền mật khẩu nếu có
-  database: 'contact_app'
+  password: 'OycGPAZERmnYtgfzkDYgrVfoPjPsMOBm',       // điền mật khẩu nếu có
+  database: 'railway'
 });
 
 db.connect((err) => {
